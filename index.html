@@ -1,265 +1,353 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Gus Fernandes">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="My Personal Website">
+    <meta name="author" content="Gustavo Fernandes">
 
     <title>Gustavo Fulton Fernandes</title>
 
-    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom CSS-->
+    <link href="css/general.css" rel="stylesheet">
+
     <link href="css/custom.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	<script src="js/modernizr-2.8.3.min.js"></script>
 
 </head>
 
-<body id="page-top" class="index">
+<body id="home">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#page-top" >Welcome <i class="fa fa-code-fork"></i></a>
-            </div>
+    <div class="intro-header">
+		<div class="col-xs-12 text-center abcen1">
+			<h1 class="h1_home wow fadeIn">Gustavo Fulton Fernandes</h1>
+			<h3 class="h3_home wow fadeIn">Web Designer - App Developer - Game Designer</h3><br>
+      <!-- <img alt="That's me" src="img/profile.png" width="300" height="300"> -->
+		</div>
+		<div class="col-xs-12 text-center abcen wow fadeIn">
+			<div class="button_down ">
+				<a class="imgcircle wow bounceInUp" data-wow-duration="1.5s"  href="#whatis"> <img class="img_scroll" src="img/circle.png" alt=""> </a>
+			</div>
+		</div>
+    </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right" style="font-size: 18px;">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+	<!-- NavBar-->
+	<nav class="navbar-default stuckMenu isStuck">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#home">Gus</a>
+			</div>
+
+			<div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+
+					<li class="menuItem"><a href="#whatis">Who am I?</a></li>
+					<!-- <li class="menuItem"><a href="#useit"></a></li> -->
+					<li class="menuItem"><a href="#portfolio">Portfolio</a></li>
+					<!-- <li class="menuItem"><a href="#credits">Notes</a></li> -->
+					<li class="menuItem"><a href="#contact">Connect</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+    <div id="whatis" class="content-section-b" style="border-top: 0">
+
+		<div class="container">
+      <div class="row">
+        <div class="col-sm-6 wow fadeInLeftBig">
+          <div id="owl-demo-1" class="owl-carousel">
+						<a href="img/me1.jpg" class="image-link">
+							<div class="item">
+								<img  class="img-responsive img-rounded" src="img/me1.jpg" alt="">
+							</div>
+						</a>
+						<a href="img/me2.jpg" class="image-link">
+							<div class="item">
+								<img  class="img-responsive img-rounded" src="img/me2.jpg" alt="">
+							</div>
+						</a>
+						<a href="img/me4.jpg" class="image-link">
+							<div class="item">
+								<img  class="img-responsive img-rounded" src="img/me4.jpg" alt="">
+							</div>
+						</a>
+					</div>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
+      <div class="col-sm-6 wow fadeInRightBig"  data-animation-delay="200">
+          <h3 class="section-heading">Hey!</h3>
 
-    <!-- Header -->
-    <script src="js/triangle.js"></script>
-     <header class="height">
-        <div id="bg"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/Profile.png" width="18%">
-                    <div class="intro-text">
-                        <span class="element"></span></br><div class="star-light"></div>
-                        <span class="role"></span>
-                    </div>
-                </div>
-            </div>
+          <p class="lead">
+            I'm Gustavo Fulton Fernandes and I was born in Rio de Janeiro, Brazil in 1996. Currently, I'm a student at Michigan State University, majoring in Computer Science and with a minor in Game Design. I started programming when I was 17 and am really passionate about the integration between creativity and coding. I am a person of many hobbies and I love learning new things.
+					</p>
+          <div class="sub-title lead3">"Fall in love with the process and results will come."</div>
+				</div>
+			</div>
+    </div>
+  </div>
+
+
+    <div id="portfolio" class="content-section-a">
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center wrap_title">
+             <h2>Portfolio</h2>
+             <p class="lead" style="margin-top:0">Some of my personal projects</p>
+             <h3>Game Designer</h3>
+           </div>
+			  </div>
+      <br><br>
+      <div class="row">
+          <div class="col-sm-6 pull-right wow fadeInRightBig">
+            <img class="img-responsive " src="img/game2.png" alt="">
+          </div>
+          <div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="800">
+            <h3 class="section-heading">Runedemic</h3>
+          <div class="sub-title lead3">Multiplayer puzzle game</div>
+            <p class="lead">
+              Runedemic is a multiplayer puzzle/action game where you and your opponent race against each other to try and reach the runestone in the middle of the board to power up and gain the ability to destroy each other. The power up lasts for 15 seconds and then will respawn, giving both players the chance to race for it again.
+            </p>
+           <a class="btn btn-embossed btn-info" target="_blank" href="https://gamejolt.com/games/runedemic/233824" role="button">Visit Website</a>
+          </div>
         </div>
-    </header>
-
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
-                    <hr class="star-primary">
-                </div>
+        <div class="row" style="padding-top: 5%;">
+            <div class="col-sm-6 pull-left wow fadeInLeftBig">
+              <img class="img-responsive" style="border-radius: 15px" src="img/game1.jpg" alt="">
             </div>
-            <div class="row">
-                <div class="col-sm-12 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/drivethruplus.png" class="img-responsive">
+            <div class="col-sm-6 wow fadeInRightBig"  data-animation-delay="800">
+              <h3 class="section-heading">Staying Home</h3>
+            <div class="sub-title lead3">Horror Experience</div>
+              <p class="lead">
+                Staying Home is a first person survival horror adventure where you must avoid the gaze of The Butcher as you attempt to escape his home. Fighting is not an option, and how long will it take until he finds you snooping around?
+               </p>
+             <a class="btn btn-embossed btn-info" target="_blank" href="https://gamejolt.com/games/stayinghome/244964" role="button">Visit Website</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-md-offset-3 text-center wrap_title">
+           <h3>Web Designer</h3>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 wow fadeInLeftBig">
+              <div id="owl-demo" class="owl-carousel">
+                <a href="img/drive1.jpg" class="image-link">
+                  <div class="item">
+                    <img  class="img-responsive img-rounded" src="img/drive1.jpg" alt="">
+                  </div>
+                </a>
+                <a href="img/drive2.jpg" class="image-link">
+                  <div class="item">
+                    <img  class="img-responsive img-rounded" src="img/drive2.jpg" alt="">
+                  </div>
+                </a>
+                <a href="img/drive3.jpg" class="image-link">
+                  <div class="item">
+                    <img  class="img-responsive img-rounded" src="img/drive3.jpg" alt="">
+                  </div>
+                </a>
+                <a href="img/drive4.jpg" class="image-link">
+                  <div class="item">
+                    <img  class="img-responsive img-rounded" src="img/drive4.jpg" alt="">
+                  </div>
+                </a>
+                <a href="img/drive5.jpg" class="image-link">
+                  <div class="item">
+                    <img  class="img-responsive img-rounded" src="img/drive5.jpg" alt="">
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-6 wow fadeInRightBig"  data-animation-delay="200">
+                <h3 class="section-heading">DriveThru Plus</h3>
+                <div class="sub-title lead3">Winner Spartahack 2015!!</div>
+                <p class="lead">
+                  The app is made for Apple Car Play and Android Auto. How it works: Customer enters retaurant parking lot and car navigation system prompts for application to launch. After application launch, customers place order through app. Passengers in car can connect their phone to the session and they can see each others orders, but with no access to change them. If help is needed, customers can connect to a representative which will talk to them over Bluetooth. Customers pay separately and receive their orders in separate baggage. Customers receive order and enjoy!
+                </p>
+                <a class="btn wow tada btn-embossed btn-primary fadeInRightBig" target="_blank" href="https://devpost.com/software/drivethruplus" role="button">View More</a>
+            </div>
+          </div>
+          <div class="row" style="margin-top: 5%">
+              <div class="col-sm-6 pull-right wow fadeInRightBig">
+                <img class="img-responsive " src="img/bassloop.png" alt="" style="border-radius: 15px;">
+              </div>
+              <div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="800">
+                <h3 class="section-heading">BassLoop</h3>
+              <div class="sub-title lead3">Live Music Production</div>
+                <p class="lead">
+                  BassLoop is a web-based music production software, where everyone in the entire world can make music at the same time, simultaneously. BassLoop uses a real-time database to manage the sounds played and sync between multiple music producers in the same lobby. Because there's no need for authentication, many different lobbies can be created and multiple people (1k+) can produce at the same time.
+                </p>
+                <a class="btn wow tada btn-embossed btn-primary fadeInRightBig" target="_blank" href="https://devpost.com/software/bassloop" role="button">View More</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-md-offset-3 text-center wrap_title">
+             <h3>App Developer</h3>
+            </div>
+            <div class="row" style="padding-top: 5%;">
+              <div class="col-sm-4 pull-left wow fadeInLeftBig">
+                <img class="img-responsive" style="max-width: 50%; margin: auto" src="img/app1.png" alt="">
+              </div>
+              <div class="col-sm-4 pull-left wow fadeInLeftBig">
+                <img class="img-responsive" style=" max-width: 50%; margin: auto" src="img/app2.png" alt="">
+              </div>
+              <div class="col-sm-4 pull-left wow fadeInLeftBig">
+                <img class="img-responsive" style=" max-width: 50%; margin: auto" src="img/app3.png" alt="">
+              </div>
+              <!-- <div class="col-sm-6 pull-right wow fadeInLeftBig">
+                <img class="img-responsive " src="img/app1.png" alt="" style="border-radius: 15px;">
+              </div> -->
+                <!-- <div class="col-sm-6 wow fadeInLeftBig">
+                  <div id="owl-demo" class="owl-carousel">
+                    <a href="img/drive1.jpg" class="image-link">
+                      <div class="item">
+                        <img  class="img-responsive img-rounded" src="img/drive1.jpg" alt="">
+                      </div>
                     </a>
+                    <a href="img/drive2.jpg" class="image-link">
+                      <div class="item">
+                        <img  class="img-responsive img-rounded" src="img/drive2.jpg" alt="">
+                      </div>
+                    </a>
+                    <a href="img/drive3.jpg" class="image-link">
+                      <div class="item">
+                        <img  class="img-responsive img-rounded" src="img/drive3.jpg" alt="">
+                      </div>
+                    </a>
+                    <a href="img/drive4.jpg" class="image-link">
+                      <div class="item">
+                        <img  class="img-responsive img-rounded" src="img/drive4.jpg" alt="">
+                      </div>
+                    </a>
+                    <a href="img/drive5.jpg" class="image-link">
+                      <div class="item">
+                        <img  class="img-responsive img-rounded" src="img/drive5.jpg" alt="">
+                      </div>
+                    </a>
+                  </div>
+                </div> -->
+                <div class="col-sm-12 wow fadeInRightBig"  data-animation-delay="800">
+                  <h3 class="section-heading">Spartan Innovations - The Hatch</h3>
+                <div class="sub-title lead3">Mobile Apps for Students</div>
+                  <p class="lead">
+                    The Hatch is designed as a coworking space for area college students, which are prospective, creative, and innovative entrepreneurs ready to develop their business ideas. The Hatch features a structured process that allows students to move through discovery, validation and launch, earning services, support and funding.
+                  </p>
+                 <a class="btn wow tada btn-embossed btn-primary fadeInRightBig" target="_blank" href="http://msuhatch.com/" role="button">View More</a>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
 
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row" style="text-align: justify">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>Hello everyone, I'm Gustavo Fulton Fernandes! I'm a Computer Science student at Michigan State University and I am really excited with what I do. I started programming when I was 17, late I know, but I haven't stopped so far. I get myself thinking everyday how amazing programmers are and how we are important to the world nowadays (we are the knights from middle age lol).</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>What I am really interested on is Web Programming. However, I do all kinds of stuff. From Security Analysis to App Development, all get me really going and once I start, I don't stop until it's done, no matters what it takes. Anyways, I am a really motivated person who is interested in working with you, if you will to give me a chance. <br>Thanks.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp/Gus<p>
-                </div>
-            </div>
-        </div>
-    </section>
+	<!-- Contact -->
+	<div id="contact" class="content-section-b">
+		<div class="container">
+			<div class="row">
 
+			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
+				<h2>Contact Me</h2>
+			</div>
 
-    <!-- Footer -->
-    <footer class="text-center" id="contact">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-12">
-                        <h3>Contact Around the Web</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="mailto:ferna194@msu.edu"><i class="fa fa-envelope-o fa-5x"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/gustavofulton" target="_blank"><i class="fa fa-github fa-5x"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://plus.google.com/u/0/117149981229921287623/about" target="_blank"><i class="fa fa-google-plus fa-5x"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/pub/gustavo-fulton/b6/7a2/971" class="hover" target="_blank"><i class="fa fa-linkedin fa-5x"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+			<form method="post" >
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="InputName">Your Name</label>
+						<div class="input-group">
+							<input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
+							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="InputEmail">Your Email</label>
+						<div class="input-group">
+							<input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required  >
+							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="InputMessage">Message</label>
+						<div class="input-group">
+							<textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+						</div>
+					</div>
+
+					<input type="submit" name="submit" id="submit" value="Submit" class="btn wow tada btn-embossed btn-primary pull-right">
+				</div>
+			</form>
+
+			<hr class="featurette-divider hidden-lg">
+				<div class="col-md-5 col-md-push-1 address">
+					<h3>Contact</h3>
+					<p>Phone: 517-295-0932</p>
+          <p>Email: ferna194@msu.edu</p>
+
+					<h3>Social</h3>
+					<div class="social">
+					<a href="https://www.facebook.com/gustavo.fulton"><i class="fa fa-facebook-square fa-size"> </i></a>
+					<a href="https://www.twitter.com/gustavofulton"><i class="fa  fa-twitter-square fa-size"> </i> </a>
+					<a href="https://www.linkedin.com/in/gustavo-fulton-9717a2b6"><i class="fa fa-linkedin-square fa-size"> </i></a>
         </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; 2016
-                    </div>
-                </div>
-            </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="footer-title text-center">© Copyright 2016, Gustavo Fulton Fernandes</h3>
+            <p></p>
+          </div>
         </div>
+      </div>
     </footer>
 
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll visible-xs visible-sm">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/script.js"></script>
+	<!-- StikyMenu -->
+	<script src="js/stickUp.min.js"></script>
+	<script type="text/javascript">
+	  jQuery(function($) {
+		$(document).ready( function() {
+		  $('.navbar-default').stickUp();
 
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>DriveThru+</h2>
-                            <hr class="star-primary">
-                            <div id="slideshow">
-                                <div class="first current">
-                                <img src="img/portfolio/gallery.jpg" class="img-responsive img-centered"></div>
-                                <div id="img1">
-                                <img src="img/portfolio/gallery1.jpg" class="img-responsive img-centered"></div>
-                                <div id="img2">
-                                <img src="img/portfolio/gallery2.jpg" class="img-responsive img-centered"></div>
-                                <div id="img3">
-                                <img src="img/portfolio/gallery3.jpg" class="img-responsive img-centered"></div>
-                                <div id="img4" class="last">
-                                <img src="img/portfolio/gallery4.jpg" class="img-responsive img-centered"></div>
-                                <button class="btn btn-success" id="prev" disabled="disabled">Prev</button>
-                                <button class="btn btn-success" id="next">Next</button>
-                            </div></br>
-                            <p>The app is made for Apple Car Play and Android Auto. How it works: Customer enters retaurant parking lot and car navigation system prompts for application to launch. After application launch, customers place order through app. Passengers in car can connect their phone to the session and they can see each others orders, but with no access to change them. If help is needed, customers can connect to a representative which will talk to them over Bluetooth. Customers pay separately and receive their orders in separate baggage. Customers receive order and enjoy!</p>
-                            <ul class="list-inline item-details">
-                                <li><i class="fa fa-github"> </i> <a href="https://github.com/DomTheDeveloper/DriveThruPlus">Github Repo
-                                </li></a>
-                                <li>Date:
-                                    <strong>March 2015</strong>
-                                </li>
-                                <li><strong><a href="http://devpost.com/software/drivethruplus">DevPost</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+		});
+	  });
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <!-- Typewriter-->
-    <script src="js/typed.js"></script>
-    <script>
-        $(function(){
-            $(".element").typed({
-            strings: ["Gustavo Fulton Fernandes"],
-            typeSpeed: 100,
-            showCursor: false,
-            });
-        });
-    </script>
-        <script>
-        $(function(){
-            $(".role").typed({
-            strings: ["Bootstrap lover.", "Security Specialist.", "Web Developer."],
-            typeSpeed: 80,
-            startDelay: 3700,
-            });
-        });
-    </script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/custom.js"></script>
-
+	</script>
+	<!-- Smoothscroll -->
+	<script type="text/javascript" src="js/jquery.corner.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+	 new WOW().init();
+	</script>
+	<script src="js/classie.js"></script>
+	<!-- <script src="js/uiMorphingButton_inflow.js"></script> -->
+	<script src="js/jquery.magnific-popup.js"></script>
 </body>
 
 </html>
