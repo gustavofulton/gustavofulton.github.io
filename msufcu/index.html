@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>MSUFCU Chat Bot</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+<style>
+  html, body, iframe { width: 100%; height:100%; padding:0; margin:0; }
+  #ibm_chat_root { position:absolute; bottom:0; right: 0px; height: 85%; min-height:400px; width:100%; background:#17453B; }
+  .header {
+    position: absolute;
+    z-index: 10;
+    background: white;
+    height: 15%;
+    width: 100%;
+  }
+  .login {
+    float: right;
+    border: none;
+    padding: 10px;
+  }
+  .login button {
+    position: relative;
+    display: block;
+    background-color: #004f39;
+    padding: 6px 20px 6px;
+    border: 0px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 11pt;
+    border-radius: 3px;
+    text-decoration: none;
+    z-index: 200;
+  }
+  .login button img {
+    width: 15px;
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <img src="https://media.msufcu.org/publicsites/publicsite/graphics/msufcu/brand_logo.png" />
+    <div class="login">
+      <button><img src="https://media.msufcu.org/publicsites/publicsite/icons/msufcu/padlock.png" /> Sign in </button>
+    </div>
+    <div class="login">
+      <button>Create an account </button>
+    </div>
+  </div>
+  <div id="ibm_chat_root"></div>
+  <iframe style="width:100%; height:100%" src="http://www.ibm.com/en-us"></iframe>
+  <!--
+  https://unpkg.com/@watson-virtual-agent/chat-widget@X.X.X/dist/chat.min.js for a specific version, where X.X.X is the semantic version of the chat widget.
+  NOTE: unpkg.com is not affiliated with IBM and not recommended for production.
+  NOTE: In your production environment, we recommend locking down your widget version.
+  -->
+  <script src='https://unpkg.com/@watson-virtual-agent/chat-widget/dist/chat.min.js'></script>
+  <script>
+    var config = {
+      el: 'ibm_chat_root',
+      baseURL: 'https://api.ibm.com/virtualagent/run/api/v1',
+      botID: '633e70da-e9b7-4c5e-a34e-d6888633026e',
+      XIBMClientID: 'd5b4c331-0038-4969-a82f-fc4509c8c127',
+      XIBMClientSecret: 'I4aC6mE0cB0qH7uJ4yG1nI0qV1wE8hN2wO8oC0mE1lT7kR6hP1'
+    };
+    window.IBMChat.init(config);
+  </script>
+</body>
+</html>
