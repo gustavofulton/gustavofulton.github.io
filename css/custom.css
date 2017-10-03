@@ -433,3 +433,7 @@ NO MORE TABLES!! ;)
 		font-weight: bold;
 	}
 }
+.my-photo {
+	max-width: 400px;
+	margin: auto;
+}
