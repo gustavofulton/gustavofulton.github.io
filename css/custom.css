@@ -395,6 +395,9 @@ background: url('../img/AjaxLoader.gif') no-repeat center center #aebab6;
 	/*padding: 5%;*/
 	opacity: 0.9;
 }
+.h1_home {
+	font-size: 4em;
+}
 
 /*
 NO MORE TABLES!! ;)
