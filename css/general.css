@@ -14,6 +14,12 @@ body, html {
 
 .abcen1{position: absolute;top: 35%;}
 
+
+/* Header */
+.demo-canvas {
+	/*background-color: black;*/
+}
+
 .content-section-c {
 	border-top: 1px solid #32465A;
 	border-bottom: 1px solid #32465A;
@@ -233,13 +239,41 @@ color: #ECEBEB;
 	font-weight: 400;
 }
 
+.large-header {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	background: url("http://www.sepeb.com/dark-space-background/dark-space-background-011.jpg") no-repeat center center;
+	background-size: cover;
+	z-index: 1;
+}
+.main-title {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	font-size: 1.5em;
+	/*color: #f9f1e9;*/
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+.smaller {
+	font-size: 0.5em;
+}
+.arrow {
+	z-index: 2;
+}
+
 .intro-header {
 	height: 100%; /* Full PAge */
-	padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+	/*padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */*/
 	padding-bottom: 50px;
 	color: #f8f8f8;
-	background: url("http://www.spanhakecreative.co.nz/wp-content/uploads/2015/05/bg-polygon-1.png") no-repeat center center;
-	background-size: cover;
+	/*background: url("../img/intro-header.png") no-repeat center center;*/
+	/*background-size: cover;*/
 	text-align: center;
 }
 
