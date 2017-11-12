@@ -403,7 +403,9 @@ background: url('../img/AjaxLoader.gif') no-repeat center center #aebab6;
 NO MORE TABLES!! ;)
 */
 @media (max-width: 767px) {
-
+	.appstore {
+		width: 40% !important;
+	}
 	.hp-table table, .hp-table thead, .hp-table .hp-table tbody, .hp-table th, .hp-table td, .hp-table tr {
 		display: block;
 	}
@@ -436,4 +438,8 @@ NO MORE TABLES!! ;)
 .my-photo {
 	max-width: 400px;
 	margin: auto;
+}
+
+.appstore {
+	width: 15%;
 }
