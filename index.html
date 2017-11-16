@@ -27,6 +27,24 @@
 
   	<script src="js/modernizr-2.8.3.min.js"></script>
 
+    <script>
+
+    $(document).ready(function() {
+      jQuery(window).scroll(function () {
+            var position = jQuery(this).scrollTop();
+            jQuery('.section').each(function() {
+                var target = jQuery(this).offset().top;
+
+                var id = jQuery(this).attr('id');
+                jQuery('#navbar ul li a[data-id=' + id + ']').removeClass('clicked');
+                if (position >= target) {
+                    jQuery('#navbar ul li a[data-id=' + id + ']').addClass('clicked');
+                }
+            });
+    });
+
+</script>
+
 
 
 </head>
@@ -54,12 +72,6 @@
 	<nav class="navbar-default stuckMenu isStuck">
 		<div class="container">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
 				<a class="navbar-brand" href="#home">Gus</a>
 			</div>
 
@@ -217,32 +229,6 @@
                <a class="btn wow tada btn-embossed btn-primary fadeInRightBig" target="_blank" href="http://msuhatch.com/" role="button">View More</a>
               </div>
             </div> -->
-      <div class="row" style="padding-top: 5%;">
-          <div class="col-sm-6 pull-right wow fadeInRightBig">
-            <img class="img-responsive" style="width: 40%; margin: auto; border-radius: 15px" src="img/game3.png" alt="">
-          </div>
-          <div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="800">
-            <h3 class="section-heading">Chicken Flick'en</h3>
-          <div class="sub-title lead3">Awarded 'Best of Show' Game at Michigan State University in 2017 </div>
-            <p class="lead">
-              Chicken Flick’en is a mobile 3D, casual sports game where you launch of a team of chickens at various targets in a village. Choose your preferred team and compete against the other teams on who can get the most destruction (points) with a limited number of flicks.
-            </p>
-           <a class="btn btn-embossed btn-info" target="_blank" href="http://gamejolt.com/games/Chicken_flicken/253665" role="button">Visit Website</a>
-          </div>
-        </div>
-        <div class="row" style="padding-top: 5%;">
-            <div class="col-sm-6 pull-left wow fadeInLeftBig">
-              <img class="img-responsive" style="border-radius: 15px;" src="img/game2.png" alt="">
-            </div>
-            <div class="col-sm-6 wow fadeInRightBig"  data-animation-delay="800">
-              <h3 class="section-heading">Runedemic</h3>
-            <div class="sub-title lead3">Multiplayer puzzle game</div>
-              <p class="lead">
-                Runedemic is a multiplayer puzzle/action game where you and your opponent race against each other to try and reach the runestone in the middle of the board to power up and gain the ability to destroy each other. The power up lasts for 15 seconds and then will respawn, giving both players the chance to race for it again.
-              </p>
-             <a class="btn btn-embossed btn-info" target="_blank" href="https://gamejolt.com/games/runedemic/233824" role="button">Visit Website</a>
-            </div>
-          </div>
           <div class="col-md-6 col-md-offset-3 text-center wrap_title">
            <h3>Web Designer</h3>
           </div>
@@ -314,6 +300,32 @@
                  <a class="btn btn-embossed btn-info" target="_blank" href="https://gamejolt.com/games/stayinghome/244964" role="button">Visit Website</a>
                 </div>
               </div>
+              <div class="row" style="padding-top: 5%;">
+                  <div class="col-sm-6 pull-right wow fadeInRightBig">
+                    <img class="img-responsive" style="width: 40%; margin: auto; border-radius: 15px" src="img/game3.png" alt="">
+                  </div>
+                  <div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="800">
+                    <h3 class="section-heading">Chicken Flick'en</h3>
+                  <div class="sub-title lead3">Awarded 'Best of Show' Game at Michigan State University in 2017 </div>
+                    <p class="lead">
+                      Chicken Flick’en is a mobile 3D, casual sports game where you launch of a team of chickens at various targets in a village. Choose your preferred team and compete against the other teams on who can get the most destruction (points) with a limited number of flicks.
+                    </p>
+                   <a class="btn btn-embossed btn-info" target="_blank" href="http://gamejolt.com/games/Chicken_flicken/253665" role="button">Visit Website</a>
+                  </div>
+                </div>
+              <div class="row" style="padding-top: 5%;">
+                  <div class="col-sm-6 pull-left wow fadeInLeftBig">
+                    <img class="img-responsive" style="border-radius: 15px;" src="img/game2.png" alt="">
+                  </div>
+                  <div class="col-sm-6 wow fadeInRightBig"  data-animation-delay="800">
+                    <h3 class="section-heading">Runedemic</h3>
+                  <div class="sub-title lead3">Multiplayer puzzle game</div>
+                    <p class="lead">
+                      Runedemic is a multiplayer puzzle/action game where you and your opponent race against each other to try and reach the runestone in the middle of the board to power up and gain the ability to destroy each other. The power up lasts for 15 seconds and then will respawn, giving both players the chance to race for it again.
+                    </p>
+                   <a class="btn btn-embossed btn-info" target="_blank" href="https://gamejolt.com/games/runedemic/233824" role="button">Visit Website</a>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
